@@ -153,6 +153,13 @@ a img:active{
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+  /* responsive mode */
+    @media (max-width: 678px) {
+        .nav-list {
+            margin-bottom: 40px;
+        }
+    }
+  /* Fim do menu Hamburguer */
 
  /* Bottom Whatsapp */
 .fa-whatsapp{
@@ -213,6 +220,11 @@ a img:active{
 
 .wa::after {
     animation-delay: .5s
+}
+@media (max-width: 999px){
+    .whatsapp{
+        bottom: 15rem;
+    }
 }
  /* Bottom Whatsapp end*/
 
