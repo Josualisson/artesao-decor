@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+background: -webkit-linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
+background: linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
+height: 300vh;
+}
+
+/* Barra de Menu */
+header{
+    margin-top: 30px;
+}
+
+/* Imagem da barra de menu */
+a img {
+    width: 200px;
+    height: 80px;
+}
+a img:hover{
+    transition: .2s ease;
+    opacity: 0.9;
+}
+a img:active{
+    opacity: 0.5;
+}
+/* Opções do Header */
+.header-logo-options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.header-option{
+    margin-left: 10rem;
+}
+.header-option a{
+    margin: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter';
+}
+.header-option a:hover{
+    bottom: 5px;
+    transition: .2s ease;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: overline;
+    font-family: 'Inter';
+}
+.header-option a:active{
+    opacity: 0.5;
+}
+
+/* Menu hamburguer */
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-left: 10rem;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  .nav-list li a{
+    margin: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter';
+  }
+  .nav-list li a:hover{
+    bottom: 5px;
+    transition: .2s ease;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: overline;
+    font-family: 'Inter';
+  }
+  .nav-list li a:active{
+    opacity: 0.5;
+}
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+@media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 20vh;
+      right: 0;
+      width: 100vw;
+      height: 30px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      transition: transform 0.5s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+ /* Bottom Whatsapp */
+.fa-whatsapp{
+    font-size: 40px;
+    color: #fff;
+}
+.whatsapp:hover{
+    transition: .2s ease;
+}
+@keyframes whatsapp {
+    0% {
+        transform: scale(.5)
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0
+    }
+}
+
+.whatsapp:hover {
+    background: #41a79d
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 70px;
+    padding: 5px;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    background: #0ba360;
+    z-index: 1000;
+    z-index: 2000;
+}
+
+.whatsapp::after,
+.whatsapp::before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    border: 4px solid #0ba360;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    animation: whatsapp 1.5s ease infinite
+}
+
+.wa::after {
+    animation-delay: .5s
+}
+ /* Bottom Whatsapp end*/
+
+ /* Carousel */
+
+.carousel{
+    margin-top: 5rem;
+}
+.carousel-inner{
+    width: 80%;
+}
+.carousel-item {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.images-carousel{
+    margin: 0 auto;
+    max-width: 98%; 
+    max-height: 600px;
+}
