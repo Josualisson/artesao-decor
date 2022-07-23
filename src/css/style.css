@@ -245,4 +245,39 @@ a img:active{
     margin: 0 auto;
     max-width: 98%; 
     max-height: 600px;
+    position: relative;
+}
+
+@media (max-width: 999px) and (min-width: 780px) {
+  .images-carousel{
+    margin-top: 10rem;
+    position: relative;
+  }
+}
+
+/* End Carousel */
+
+/* Reformas */
+.container{
+    margin-top: 5rem;
+}
+
+.container-h1{
+    color: #fff;
+}
+.container-h1 hr{
+    width: 5rem;
+    border: #ffffff 2px solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: -5px;
+    margin-left: 3px;
+}
+.container-fotos-sofas {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fotos-sofas-foto img{
+  width: 200px;
 }
