@@ -297,13 +297,15 @@ a img:active{
   transition: all 0.3s;
 }
 .container-fotos img:hover{
-  -moz-transform: scale(2.1);
-  -webkit-transform: scale(2.1);
-  transform: scale(2.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
 
 .container-fotos-sofas_subtitle{
   display: flex;
@@ -313,6 +315,7 @@ a img:active{
   font-weight: 500;
   color: #fff;
   margin-top: -85px;
+  text-decoration: underline;
 }
 .container-fotos-list1, .container-fotos-list2{
   display: flex;
@@ -327,4 +330,37 @@ a img:active{
   justify-content: center;
   margin-top: 5rem;
   width: 100%;
+}
+
+@media (max-width: 800px){
+  .container-fotos img:hover{
+    -moz-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .container-fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    padding: 0;
+  }
+  .container-fotos img{
+    width: 200px;
+    height: 150px;
+  }
+  .container-fotos-sofas_subtitle{
+    font-size: 18px;
+    margin-top: -70px;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-reformas{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-fotos-list2{
+    margin-top: 50px;
+  }
 }
