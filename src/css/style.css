@@ -154,9 +154,14 @@ a img:active{
     transform: rotate(45deg) translate(-5px, -7px);
   }
   /* responsive mode */
-    @media (max-width: 678px) {
+    @media (max-width: 550px) {
         .nav-list {
             margin-bottom: 40px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
   /* Fim do menu Hamburguer */
@@ -221,7 +226,7 @@ a img:active{
 .wa::after {
     animation-delay: .5s
 }
-@media (max-width: 999px){
+@media (max-width: 999px) and (min-width: 678px) {
     .whatsapp{
         bottom: 15rem;
     }
