@@ -107,6 +107,9 @@ a img:active{
     body {
       overflow-x: hidden;
     }
+    a img{
+      margin: 0px 0px 0px -50px;
+    }
     .nav-list {
       position: absolute;
       top: 20vh;
