@@ -263,19 +263,23 @@ a img:active{
 /* End Carousel */
 
 /* Reformas */
-.container{
+.containerr{
     margin-top: 5rem;
+    width: 100%;
 }
 
-.container-h1{
+.container-title{
+  margin-left: 20px;
     color: #fff;
+    font-family: 'kameron';
+    font-weight: bold;
 }
-.container-h1 hr{
+.container-title hr{
     width: 5rem;
     border: #ffffff 2px solid;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin-top: -5px;
+    margin-top: -60px;
     margin-left: 3px;
 }
 .container-fotos-sofas {
@@ -283,6 +287,39 @@ a img:active{
   flex-direction: column;
 }
 
-.container-fotos-sofas-foto img{
-  width: 200px;
+.container-fotos img{
+  width: 250px;
+  height: 250px;
+  margin: 40px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.container-fotos img:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.container-fotos-sofas_subtitle{
+  display: flex;
+  font-size: 1.6rem;
+  justify-content:center;
+  font-family: 'kameron';
+  font-weight: 500;
+  color: #fff;
+  margin-top: -85px;
+}
+.container-fotos-list1, .container-fotos-list2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container-reformas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
 }
