@@ -157,7 +157,7 @@ a img:active{
     transform: rotate(45deg) translate(-5px, -7px);
   }
   /* responsive mode */
-    @media (max-width: 500px) {
+    @media (max-width: 400px) {
         .nav-list {
             margin-bottom: 40px;
             width: 80%;
