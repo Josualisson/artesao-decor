@@ -288,6 +288,7 @@ a img:active{
 }
 
 .container-fotos img{
+  overflow: hidden;
   width: 250px;
   height: 250px;
   margin: 40px;
@@ -296,10 +297,14 @@ a img:active{
   transition: all 0.3s;
 }
 .container-fotos img:hover{
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -moz-transform: scale(2.1);
+  -webkit-transform: scale(2.1);
+  transform: scale(2.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .container-fotos-sofas_subtitle{
   display: flex;
   font-size: 1.6rem;
