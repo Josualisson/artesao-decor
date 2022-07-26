@@ -6,7 +6,7 @@ body{
 background: -webkit-linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
 background: linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
 overflow-x: hidden; /* Não deixa a página rolar pro lado */
-height: 400vh; /* Tamanho da página */
+height: 4000vh; /* Tamanho da página */
 }
 
 
@@ -421,4 +421,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 }
 .redes-sociais a:nth-child(4){
   background: #f09433;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  color: #fff;
+  font-family: 'inter';
+}
+
+footer .logo-footer{
+  border: #0ba360 2px solid;
+  border-radius: 5px;
+}
+.copyright{
+  color: #ffffff5b;
+  text-align: center;
+}
+.copyright p{
+  font-size: 12px;
+}
+.copyright a{
+  color: rgba(255, 255, 255, 0.355);
+  transition: color 0.3s ease;
+}
+.copyright a:hover{
+  color: #fff;
+}
+
+@media (max-width: 999px){
+Footer{
+  display: flex;
+  flex-direction: column; 
+}
+.logo-footer{
+  margin-top: 5rem;
+}
+.logo-footer img{
+  width: 300px;
+}
 }
