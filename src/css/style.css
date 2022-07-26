@@ -6,7 +6,6 @@ body{
 background: -webkit-linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
 background: linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
 overflow-x: hidden; /* Não deixa a página rolar pro lado */
-height: 4000vh; /* Tamanho da página */
 }
 
 
@@ -433,9 +432,8 @@ footer{
   font-family: 'inter';
 }
 
-footer .logo-footer{
-  border: #0ba360 2px solid;
-  border-radius: 5px;
+footer .logo-footer img{
+  border-radius:10px;
 }
 .copyright{
   color: #ffffff5b;
@@ -458,7 +456,7 @@ Footer{
   flex-direction: column; 
 }
 .logo-footer{
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .logo-footer img{
   width: 300px;
