@@ -3,15 +3,29 @@
     padding: 0;
 }
 body{
-background: -webkit-linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
-background: linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
+      background: rgba(234,233,234,1);
+      color: black;
+/* background: -webkit-linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
+background: linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44)); */
 overflow-x: hidden; /* Não deixa a página rolar pro lado */
 }
 
 
 /* Barra de Menu */
+nav a img{
+  margin-bottom: 17px;
+}
 header{
-    margin-top: 30px;
+  color: black;
+  border: transparent 2px solid;
+  background: rgba(234,233,234,1);
+  background: -moz-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234,233,234,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eae9ea', endColorstr='#ffffff', GradientType=0 );
 }
 
 /* Imagem da barra de menu */
@@ -38,7 +52,6 @@ a img:active{
 }
 .header-option a{
     margin: 30px;
-    color: #fff;
     text-decoration: none;
     font-family: 'Inter';
 }
@@ -46,7 +59,6 @@ a img:active{
     bottom: 5px;
     transition: .2s ease;
     opacity: 0.8;
-    color: #fff;
     text-decoration: overline;
     font-family: 'Inter';
 }
@@ -75,7 +87,7 @@ a img:active{
   }
   .nav-list li a{
     margin: 30px;
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-family: 'Inter';
   }
@@ -83,7 +95,7 @@ a img:active{
     bottom: 5px;
     transition: .2s ease;
     opacity: 0.8;
-    color: #fff;
+    color: black;
     text-decoration: overline;
     font-family: 'Inter';
   }
@@ -274,7 +286,7 @@ a img:active{
 
 .container-title{
   margin-left: 20px;
-    color: #fff;
+    color: black;
     font-family: 'kameron';
     font-weight: bold;
 }
@@ -283,8 +295,8 @@ a img:active{
 }
 .container-title hr{
     width: 5rem;
-    border: #ffffff 2px solid;
-    background-color: rgb(255, 255, 255);
+    border: black 2px solid;
+    background-color: black;
     border-radius: 10px;
     margin-top: -60px;
     margin-left: 3px;
@@ -322,7 +334,7 @@ a img:active{
   justify-content:center;
   font-family: 'kameron';
   font-weight: 500;
-  color: #fff;
+  color: black;
   margin-top: -85px;
   text-decoration: underline;
 }
@@ -428,7 +440,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 5rem;
-  color: #fff;
+  color: black;
   font-family: 'inter';
 }
 
@@ -436,18 +448,18 @@ footer .logo-footer img{
   border-radius:10px;
 }
 .copyright{
-  color: #ffffff5b;
+  color: black;
   text-align: center;
 }
 .copyright p{
   font-size: 12px;
 }
 .copyright a{
-  color: rgba(255, 255, 255, 0.355);
+  color: rgba(0, 0, 0, 0.355);
   transition: color 0.3s ease;
 }
 .copyright a:hover{
-  color: #fff;
+  color: black;
 }
 
 @media (max-width: 999px){
