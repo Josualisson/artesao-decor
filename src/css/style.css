@@ -111,7 +111,7 @@ a img:active{
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: black;
     margin: 8px;
     transition: 0.3s;
   }
@@ -295,6 +295,7 @@ a img:active{
 }
 .container-title hr{
     width: 5rem;
+    height: 5px;
     border: black 2px solid;
     background-color: black;
     border-radius: 10px;
@@ -444,8 +445,10 @@ footer{
   font-family: 'inter';
 }
 
-footer .logo-footer img{
+footer .logo-footer a img{
   border-radius:10px;
+  width: 20rem;
+  height: auto;
 }
 .copyright{
   color: black;
@@ -478,5 +481,8 @@ Footer .informations{
 }
 Footer .informations li{
   margin-top: -4px;
+}
+Footer span {
+  font-size: 15px;
 }
 }
