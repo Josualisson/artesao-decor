@@ -289,6 +289,13 @@ nav {
   width: 30rem !important;
   height: auto !important;
 }
+@media (max-width: 999px) {
+  .lightbox img{
+    display: flex;
+    width: 20rem !important;
+    height: auto !important;
+  }
+}
 .lightbox:target{
   outline: none;
   display: flex;
