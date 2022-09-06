@@ -285,8 +285,9 @@ nav {
   background: rgba(0, 0, 0, 0.348);
 }
 .lightbox img{
-  max-width: 90%;
-  max-height: 80%;
+  display: flex;
+  width: 30rem !important;
+  height: auto !important;
 }
 .lightbox:target{
   outline: none;
