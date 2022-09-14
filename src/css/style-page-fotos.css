@@ -85,6 +85,14 @@ nav {
   letter-spacing: 3px;
   margin-left: 32px;
 }
+.nav-list li:nth-child(2){
+  bottom: 5px;
+  transition: .2s ease;
+  opacity: 0.8;
+  color: black;
+  text-decoration: overline;
+  font-family: 'Inter';
+}
 .nav-list li a{
   margin: 30px;
   color: black;
