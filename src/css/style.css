@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
 * {
     margin: 0;
     padding: 0;
 }
 body{
+      font-family: "Open Sans", sans-serif;
       background: rgba(234,233,234,1);
       color: black;
 /* background: -webkit-linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
@@ -40,6 +42,13 @@ a img:hover{
 a img:active{
     opacity: 0.5;
 }
+h1{
+  font-family: "Montserrat", sans-serif;
+  color: #293651;
+  font-weight: 700rem;
+
+}
+
 /* Opções do Header */
 .header-logo-options{
     display: flex;
@@ -250,8 +259,16 @@ a img:active{
  /* Bottom Whatsapp end*/
 
  /* Carousel */
+ 
+ 
+.carousel-item{
+  height: 20rem;
+}
+.carousel-item img{
+  height: 100%;
+}
 
-.carousel{
+/* .carousel{
     margin-top: 5rem;
 }
 .carousel-inner{
@@ -274,6 +291,9 @@ a img:active{
     margin-top: 10rem;
     position: relative;
   }
+} */
+img{
+  image-rendering: optimizeQuality;
 }
 
 /* End Carousel */
@@ -295,13 +315,20 @@ a img:active{
 }
 .container-title hr{
     width: 5rem;
-    height: 5px;
-    border: black 2px solid;
-    background-color: black;
+    height: 5px; 
+    border: rgb(0, 0, 0) 2px solid;
     border-radius: 10px;
-    margin-top: -60px;
-    margin-left: 3px;
+    margin-top: -6px;
+    margin-left: 100px;
 }
+@media (max-width: 999px) {
+  .container-title hr{
+    margin-left: 50px;
+
+  }
+}
+
+
 .container-fotos-sofas {
   display: flex;
   flex-direction: column;
