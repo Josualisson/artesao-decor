@@ -5,7 +5,7 @@
 }
 body{
       font-family: "Open Sans", sans-serif;
-      background: rgba(234,233,234,1);
+      background: #f9f9f9;
       color: black;
 /* background: -webkit-linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
 background: linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44)); */
@@ -304,13 +304,54 @@ img{
 }
 .cards{
   width: 20rem !important;
+  margin: 10px;
 }
 @media (max-width: 999px){
   .cards{
-    width: 50% !important;
+    width: 80% !important;
+    margin: 30px !important;
+  }
+  .card-img-top{
+    width: 70% !important;
   }
 }
-
+.fa-duotone .fa-loveseat{
+  color: black;
+  background-color: black;
+  width: 100px;
+}
+/* CARD REFORMAS ICON */
+.cards-cardboy_cardicon{
+  display: flex;
+  align-items: center;
+}
+.cards-cardboy_cardicon span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(73, 73, 73, 0.563);
+  width: 50px;
+  padding: 8px;
+  border-radius: 3px;
+}
+.fa-couch{
+  display: flex;
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.card-title{
+  color: #293651;
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.card-text{
+  font-family: "Open Sans", sans-serif;
+  color: #99a0b0;
+}
+/* END CARD REFORMA ICON */
 .single_service {
   padding: 30px;
   border-radius: 5px;
@@ -322,67 +363,34 @@ img{
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background-color: #fff; }
-  @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .single_service {
-      padding: 20px; } }
-  .single_service .service_icon i {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    font-size: 46px;
-    background-color: #00A78E;
-    color: #fff;
-    border-radius: 25px;
-    border-bottom-right-radius: 0;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .single_service .service_icon i {
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-        font-size: 36px; } }
-  .single_service .service_content {
-    margin-top: 25px; }
-    .single_service .service_content .service_title a {
-      font-size: 22px;
-      font-weight: 600;
-      color: #293651;
-      -webkit-transition: all 0.3s ease-out 0s;
-      -moz-transition: all 0.3s ease-out 0s;
-      -ms-transition: all 0.3s ease-out 0s;
-      -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s; }
-      @media only screen and (min-width: 576px) and (max-width: 767px) {
-        .single_service .service_content .service_title a {
-          font-size: 18px; } }
-    .single_service .service_content p {
-      margin-top: 20px;
-      -webkit-transition: all 0.3s ease-out 0s;
-      -moz-transition: all 0.3s ease-out 0s;
-      -ms-transition: all 0.3s ease-out 0s;
-      -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s; }
-  .single_service:hover {
-    background-color: #00A78E; 
-  }
-    .single_service:hover .service_icon i {
-      background-color: #fff;
-      color: #00A78E; }
-    .single_service:hover .service_content .service_title a {
-      color: #fff; }
-    .single_service:hover .service_content p {
-      color: #fff; 
-      }
-    .service_title{
-      margin-top: 10px;
+  background-color: #fff; 
+}
+.single_service:hover img{
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+}
 
-    }
+  .single_service:hover {
+/*     -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9); */
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out !important;
+    background: linear-gradient(to bottom, rgba(73, 73, 73, 0.563) 0%, rgba(255,255,255,1) 100%);
+    cursor: pointer;
+  }
+  .cards:hover{
+    transition: 0.5s ease-in-out;
+  }
+  .cards:hover > .card-body .cards-cardboy_cardicon .card-title{
+    transition: 0.5s ease-in-out;
+    opacity: 0.7;
+  }
+  .cards:hover > .card-body .cards-cardboy_cardicon span{
+    transition: 0.5s ease-in-out;
+    opacity: 0.7;
+  }
+
+    
 
 /* NEW */
 .containerr{
