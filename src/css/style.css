@@ -306,6 +306,12 @@ img{
   width: 20rem !important;
   margin: 10px;
 }
+  .card-text{
+  text-decoration: none !important;
+}
+.cards img {
+  height: auto !important;
+}
 @media (max-width: 999px){
   .cards{
     width: 80% !important;
@@ -334,7 +340,7 @@ img{
   padding: 8px;
   border-radius: 3px;
 }
-.fa-couch{
+.fa-couch, .fa-loveseat{
   display: flex;
   font-size: 20px;
   color: white;
@@ -355,9 +361,9 @@ img{
 .single_service {
   padding: 30px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
-  box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(109, 109, 109, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(109, 109, 109, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(109, 109, 109, 0.3);
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -371,12 +377,9 @@ img{
 }
 
   .single_service:hover {
-/*     -moz-transform: scale(0.9);
-    -webkit-transform: scale(0.9); */
     transform: scale(1.05);
     transition: 0.5s ease-in-out !important;
     background: linear-gradient(to bottom, rgba(73, 73, 73, 0.563) 0%, rgba(255,255,255,1) 100%);
-    cursor: pointer;
   }
   .cards:hover{
     transition: 0.5s ease-in-out;
@@ -402,7 +405,12 @@ img{
 }
 
 .container-title{
-  margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+    margin-left: 10px;
     color: black;
     font-family: 'kameron';
     font-weight: bold;
@@ -410,13 +418,29 @@ img{
 .container-title:nth-child(3){
   margin-top: 5rem;
 }
-.container-title hr{
-    width: 5rem;
-    height: 5px; 
-    border: rgb(0, 0, 0) 2px solid;
-    border-radius: 10px;
-    margin-top: -6px;
-    margin-left: 100px;
+.container-title .span{
+  display: flex;
+  justify-content: center;
+}
+.container-title span{
+    background-color: black;
+    border: rgb(99, 94, 94) 2px solid;
+    border-radius: 50px;
+    margin-left: 7px;
+    height: -5px;
+    margin-top: 5px;
+    margin-bottom: 5rem;
+}
+.container-title span:nth-child(1){
+  width: 80px;
+}
+.container-title span:nth-child(2){
+  width: 20px;
+  border: #00A78E solid 2px;
+}
+.container-title span:nth-child(3){
+  width: 20px;
+  border: black solid 2px;
 }
 @media (max-width: 999px) {
   .container-title hr{
