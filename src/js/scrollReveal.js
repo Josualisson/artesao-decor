@@ -62,6 +62,8 @@ ScrollReveal().reveal('.container-title',{
     delay: 800
 });
 
+/* FOOTER */
+
 ScrollReveal().reveal('.redes-sociais',{
     delay: 500
 });
@@ -73,8 +75,36 @@ ScrollReveal().reveal('.informations',{
 ScrollReveal().reveal('.logo-footer',{
     delay: 1500
 });
-
-ScrollReveal().reveal('.copyright',{
-    delay: 1700
+ScrollReveal().reveal('.footer-topo',{
+    delay: 1800
 });
 
+
+ScrollReveal().reveal('.li-1',{
+    delay: 1000
+});
+
+ScrollReveal().reveal('.li-2',{
+    delay: 1200
+});
+
+ScrollReveal().reveal('.li-3',{
+    delay: 1400
+});
+
+ScrollReveal().reveal('.li-4',{
+    delay: 1600
+});
+
+ScrollReveal().reveal('.li-5',{
+    delay: 1800
+});
+
+ScrollReveal().reveal('.li-6',{
+    delay: 2000
+});
+
+/* ScrollReveal().reveal('.copyright',{
+    delay: 1700
+});
+ */
