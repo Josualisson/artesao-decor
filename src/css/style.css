@@ -16,6 +16,7 @@ overflow-x: hidden; /* Não deixa a página rolar pro lado */
 /* Barra de Menu */
 nav a img{
   margin-bottom: 17px;
+  filter: invert(100%);
 }
 header{
   color: black;
