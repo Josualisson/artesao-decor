@@ -113,6 +113,7 @@ h1{
     .nav-list {
       position: absolute;
       top: 20vh;
+      margin-top: -20px;
       right: 0;
       width: 100vw;
       height: 30px;
