@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body{
-    background: rgba(234,233,234,1);
-    color: black;
+      font-family: "Open Sans", sans-serif;
+      background: #f9f9f9;
+      color: black;
 /* background: -webkit-linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44));
 background: linear-gradient(180deg, rgb(12, 13, 12), rgb(44, 44, 44)); */
 overflow-x: hidden; /* Não deixa a página rolar pro lado */
@@ -13,34 +15,42 @@ overflow-x: hidden; /* Não deixa a página rolar pro lado */
 
 /* Barra de Menu */
 nav a img{
-margin-bottom: 17px;
+  margin-bottom: 17px;
+  filter: invert(100%);
 }
 header{
-color: black;
-border: transparent 2px solid;
-background: rgba(234,233,234,1);
-background: -moz-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234,233,234,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
-background: linear-gradient(to bottom, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eae9ea', endColorstr='#ffffff', GradientType=0 );
+  color: black;
+  border: transparent 2px solid;
+  background: rgba(234,233,234,1);
+  background: -moz-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234,233,234,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(234,233,234,1) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eae9ea', endColorstr='#ffffff', GradientType=0 );
 }
 
 /* Imagem da barra de menu */
 a img {
-  width: 200px;
-  height: 80px;
+    width: 150px;
 }
 a img:hover{
-  transition: .2s ease;
-  opacity: 0.9;
+    transition: .2s ease;
+    opacity: 0.9;
 }
 a img:active{
-  opacity: 0.5;
+    opacity: 0.5;
 }
+h1{
+  font-family: "Montserrat", sans-serif;
+  color: #293651;
+  font-weight: 700rem;
+
+}
+
 /* Opções do Header */
+
 .header-logo-options{
   display: flex;
   justify-content: space-around;
@@ -85,30 +95,30 @@ nav {
   letter-spacing: 3px;
   margin-left: 32px;
 }
-@media (min-width: 999px){
-  .nav-list li:nth-child(2){
-    bottom: 5px;
-    transition: .2s ease;
-    opacity: 0.8;
-    color: black;
-    text-decoration: overline;
-    font-family: 'Inter';
-  }
-}
-
 .nav-list li a{
   margin: 30px;
   color: black;
   text-decoration: none;
-  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
 }
 .nav-list li a:hover{
   bottom: 5px;
-  transition: .2s ease;
+  transition: ease-in-out .1s;
   opacity: 0.8;
-  color: black;
-  text-decoration: overline;
-  font-family: 'Inter';
+  color: rgba(73, 73, 73, 0.563);
+  text-decoration: overline 2px rgba(73, 73, 73, 0.563);
+}
+.nav-list li:nth-child(2) > a{
+  bottom: 5px;
+  transition: ease-in-out .1s;
+  opacity: 0.8;
+  color: rgba(73, 73, 73, 0.563);
+  text-decoration: overline 2px rgba(73, 73, 73, 0.563);
+}
+.nav-list li:nth-child(3){
+  display: none;
 }
 .nav-list li a:active{
   opacity: 0.5;
@@ -134,9 +144,13 @@ nav {
   a img{
     margin: 0px 0px 0px -50px;
   }
+  .carousel{
+    margin-top: 80px;
+  }
   .nav-list {
     position: absolute;
     top: 20vh;
+    margin-top: -20px;
     right: 0;
     width: 100vw;
     height: 30px;
@@ -148,9 +162,16 @@ nav {
   .nav-list li {
     margin-left: 0;
     opacity: 0;
+    margin-top: 10px;
   }
   .mobile-menu {
     display: block;
+  }
+  .nav-list li a{
+    border: rgba(73, 73, 73, 0.563) 2px solid;
+    border-radius: 5px;
+    color: rgba(73, 73, 73, 0.563);
+    margin: -10px;
   }
 }
 
@@ -359,7 +380,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 }
 
 /* Footer */
-footer{
+.footer{
+  background: linear-gradient(to bottom, rgba(254, 254, 254, 0.563) 0%, rgb(198, 198, 198) 100%);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 40px 20px 20px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -368,44 +393,75 @@ footer{
   font-family: 'inter';
 }
 
-footer .logo-footer a img{
-  border-radius:10px;
-  width: 20rem;
-  height: auto;
+.footer .logo-footer {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .logo-footer li a{
+  font-family: 'inter';
+  color: black;
+  margin-top: 10px;
+}
+.footer .logo-footer li{
+  margin: 8px;
+}
+.footer .logo-footer li a:hover{
+  transition: ease-in-out .3s;
+  color: #99a0b0;
 }
 .copyright{
-  color: black;
+  display: flex;
+  background: black;
+  color: white;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  bottom: 0;
 }
 .copyright p{
   font-size: 12px;
 }
 .copyright a{
-  color: rgba(0, 0, 0, 0.355);
+  color: rgba(184, 184, 184, 0.355);
   transition: color 0.3s ease;
 }
 .copyright a:hover{
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 999px){
-Footer{
+.footer{
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
 }
 .logo-footer{
-  margin-top: 2rem;
+  margin-top: 20px;
+  width: 100% !important;
+  justify-content: center;
+  margin-left: 30px;
 }
-.logo-footer img{
-  width: 300px;
+.logo-footer li{
+  margin-top: 5px;
 }
-Footer .informations{
+.footer-topo{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.Footer .informations{
   width: 100vw;
 }
-Footer .informations li{
+.Footer .informations li{
   margin-top: -4px;
 }
-Footer span {
+.Footer span {
   font-size: 15px;
 }
 }
